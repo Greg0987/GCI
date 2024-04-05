@@ -49,7 +49,7 @@ Set your model name like 'test'.
 $ python train.py --id test
 ```
 
-Then you can will the results print on the terminal, and the predicted results in `npy_for_pre_recall_f1/` and model weights in `results/`.
+Then you will see the scores print on the terminal, the predicted results in `npy_for_pre_recall_f1/` and model weights in `results/`.
 
 More optional arguments are visible in `train.py`.
 
@@ -66,15 +66,15 @@ This work has received assistance from the following. Consider citing their work
 ```
 ```
 @inproceedings{gao2022kuairec,
-  author = {Gao, Chongming and Li, Shijun and Lei, Wenqiang and Chen, Jiawei and Li, Biao and Jiang, Peng and He, Xiangnan and Mao, Jiaxin and Chua, Tat-Seng},
-  title = {KuaiRec: A Fully-Observed Dataset and Insights for Evaluating Recommender Systems},
-  booktitle = {Proceedings of the 31st ACM International Conference on Information \& Knowledge Management},
-  series = {CIKM '22},
-  location = {Atlanta, GA, USA},
-  url = {https://doi.org/10.1145/3511808.3557220},
-  doi = {10.1145/3511808.3557220},
-  numpages = {11},
-  year = {2022},
-  pages = {540–550}
+    author = {Gao, Chongming and Li, Shijun and Lei, Wenqiang and Chen, Jiawei and Li, Biao and Jiang, Peng and He, Xiangnan and Mao, Jiaxin and Chua, Tat-Seng},
+    title = {KuaiRec: A Fully-Observed Dataset and Insights for Evaluating Recommender Systems},
+    booktitle = {Proceedings of the 31st ACM International Conference on Information \& Knowledge Management},
+    series = {CIKM '22},
+    location = {Atlanta, GA, USA},
+    url = {https://doi.org/10.1145/3511808.3557220},
+    doi = {10.1145/3511808.3557220},
+    numpages = {11},
+    year = {2022},
+    pages = {540–550}
 }
 ```
