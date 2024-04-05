@@ -3,7 +3,7 @@
 
 The dataset used in paper is [KuaiRec](https://kuairec.com/), which can be downloaded by the link.
 
-# 1. Reconstruction of Image
+# 1. Reconstruction of images
 ```bash
 cd preprocess
 ```
@@ -42,3 +42,38 @@ python construct_graph.py
 ```
 THe thresholds of similarities are 0.2, 0.4, 0.6 and 0.8. And the graphs can be seen in `preprocess/img_adj/`.
 
+
+# 3. Training
+Set your model name like 'GCI'.
+```bash
+python train.py --id GCI
+```
+
+Then you can will the results print on the terminal, and the predicted results in `npy_for_pre_recall_f1/` and model weights in 'results/'.
+More optional arguments are visible in `train.py`.
+
+# Reference
+
+This work has received assistance from the following. Consider citing their works if you find this repo useful.
+```
+@article{viscpm,
+    title={Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages}, 
+    author={Jinyi Hu and Yuan Yao and Chongyi Wang and Shan Wang and Yinxu Pan and Qianyu Chen and Tianyu Yu and Hanghao Wu and Yue Zhao and Haoye Zhang and Xu Han and Yankai Lin and Jiao Xue and Dahai Li and Zhiyuan Liu and Maosong Sun},
+    journal={arXiv preprint arXiv:2308.12038},
+    year={2023}
+}
+```
+```
+@inproceedings{gao2022kuairec,
+  author = {Gao, Chongming and Li, Shijun and Lei, Wenqiang and Chen, Jiawei and Li, Biao and Jiang, Peng and He, Xiangnan and Mao, Jiaxin and Chua, Tat-Seng},
+  title = {KuaiRec: A Fully-Observed Dataset and Insights for Evaluating Recommender Systems},
+  booktitle = {Proceedings of the 31st ACM International Conference on Information \& Knowledge Management},
+  series = {CIKM '22},
+  location = {Atlanta, GA, USA},
+  url = {https://doi.org/10.1145/3511808.3557220},
+  doi = {10.1145/3511808.3557220},
+  numpages = {11},
+  year = {2022},
+  pages = {540–550}
+}
+```
