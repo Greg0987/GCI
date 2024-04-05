@@ -44,9 +44,9 @@ THe thresholds of similarities are 0.2, 0.4, 0.6 and 0.8. And the graphs can be 
 
 
 # 3. Training
-Set your model name like 'GCI'.
+Set your model name like 'test'.
 ```bash
-$ python train.py --id GCI
+$ python train.py --id test
 ```
 
 Then you can will the results print on the terminal, and the predicted results in `npy_for_pre_recall_f1/` and model weights in `results/`.
